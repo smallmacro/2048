@@ -1,6 +1,6 @@
 2048实践篇
 ===========
-My 2048 Game is coming soon.[2048](smallmacro.github.io/2048)
+My 2048 Game is coming soon.[2048](https://smallmacro.github.io/2048)
 
 
 ##2048Game 设计分析
