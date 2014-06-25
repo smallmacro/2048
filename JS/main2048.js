@@ -91,12 +91,14 @@ function generateOneNumber() {
 $(document).keydown(function( event ){
 	switch( event.keyCode ){
 		case 37://left
+			event.preventDefault();
 			if ( moveLeft()){
 				setTimeout("generateOneNumber()", 200);
 				setTimeout("isGameOver()", 300);
 			}
 			break;
 		case 38://up
+			event.preventDefault();
 			if ( moveUp()){
 				setTimeout("generateOneNumber()", 200);
 				setTimeout("isGameOver()", 300);
@@ -104,17 +106,20 @@ $(document).keydown(function( event ){
 
 			break;
 		case 39://right
+			event.preventDefault();
 			if ( moveRight()){
 				setTimeout("generateOneNumber()", 200);
 				setTimeout("isGameOver()", 300);
 			}
 			break;
 		case 40://down
+			event.preventDefault();
 			if ( moveDown()){
 				setTimeout("generateOneNumber()", 200);
 				setTimeout("isGameOver()", 300);
 			}
 			break;
+		default:break;
 	}
 });
 function isGameOver(){
