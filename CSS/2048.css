@@ -4,6 +4,19 @@ header {
 	width: 500px;
 	margin: 0 auto;
 }
+.rotate {
+	float: left;
+	margin: 5px 0 0 -40px;
+	background-color: #ccc;
+	padding: 0 20px;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /* IE 9 */
+	-webkit-transform:rotate(-45deg); /* Opera, Chrome, and Safari */
+}
+a,a:hover {
+	text-decoration: none;
+	color: #000;
+}
 header h1 {
 	font-family: Arial;
 	font-size: 60px;
@@ -50,4 +63,13 @@ div#grid-container{
 	line-height: 100px;
 	text-align: center;
 	position: absolute;
+}
+footer {
+	background-color: #ccc;
+	border-top-style: 1px solid #ccb;
+	font-weight: bold;
+}
+footer p{
+	text-align: center;
+	padding: 20px;
 }

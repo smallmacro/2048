@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="author" name="macropan">
+	<meta name="description" content="2048 game by macropan">
+	<meta name="keywords" content="2048游戏 移动的2048">
 	<title>2048</title>
+	<meta media="screen">
+	<!-- <link rel="stylesheet" href="CSS/reset.css"> -->
 	<link rel="stylesheet" type="text/css" href="CSS/2048.css">
-	<script type="text/javascript" src="JS/jquery-2.0.3.min.js"></script>
-	<script type="text/javascript" src="JS/support2048.js"></script>
-	<script type="text/javascript" src="JS/showAnimation2048.js"></script>
-	<script type="text/javascript" src="JS/main2048.js"></script>
 </head>
 <body>
+	<p><a class="rotate" href="http://github.com/smallmacro/2048">Fork me on Github</a></p>
 	<header>
 		<h1>2048</h1>
 		<a href="javascript:newGame()" id="newGameButton">New Game</a>
@@ -32,6 +36,12 @@
 		<div class="grid-ceil" id="grid-ceil-3-2"></div>	
 		<div class="grid-ceil" id="grid-ceil-3-3"></div>	
 	</div>
-	
+	<footer>
+		<p>Copyright @macropan<a href="http://github.com/smallmacro">Github</a></p>
+	</footer>
+	<script type="text/javascript" src="JS/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="JS/support2048.js"></script>
+	<script type="text/javascript" src="JS/showAnimation2048.js"></script>
+	<script type="text/javascript" src="JS/main2048.js"></script>
 </body>
 </html>
