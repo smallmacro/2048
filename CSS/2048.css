@@ -1,17 +1,48 @@
+
+.container {
+	margin: 0 auto;
+	/*width: 500px;*/
+
+}
+@media screen and (min-width: 961px) {
+	.container{
+		width: 500px;
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 960px) {
+.container{
+	width: 400px;
+	font-size: 14px;
+}
+}
+/*for ipad*/
+@media screen and (max-width: 768px) {
+.container{
+	width: 300px;
+	font-size: 12px;
+}
+}
 header {
 	display: block;
 	text-align: center;
-	width: 500px;
+	width: 100%;
 	margin: 0 auto;
 }
 .rotate {
-	float: left;
-	margin: 5px 0 0 -40px;
+	/*float: left;*/
+	margin: 45px 0 0 -35px;
 	background-color: #ccc;
 	padding: 0 20px;
 	transform:rotate(-45deg);
 	-ms-transform:rotate(-45deg); /* IE 9 */
 	-webkit-transform:rotate(-45deg); /* Opera, Chrome, and Safari */
+	box-shadow: 2px 2px 10px #06C;
+	-webkit-box-shadow: 2px 2px 10px #06C;
+	-moz-box-shadow: 2px 2px 10px #06C;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 a,a:hover {
 	text-decoration: none;
@@ -19,14 +50,15 @@ a,a:hover {
 }
 header h1 {
 	font-family: Arial;
-	font-size: 60px;
+	font-size: 3.5em;
 	font-weight: bold;
 }
 header #newGameButton {
 	display: block;
 	margin: 20px auto;
-	width: 100px;
+	width: 20%;
 	padding: 10px 10px;
+	font-size: 1em;
 	background-color: #8f7a66;
 	color: #000;
 	border-radius: 10px;
@@ -37,17 +69,22 @@ header #newGameButton:hover{
 }
 header p{
 	font-family: Arial;
-	font-size: 25px;
+	font-size: 1.5em;
 	margin: 20px auto;
 }
 div#grid-container{
-	width: 460px;
-	height: 460px;
-	padding: 20px;
-	margin:50px auto;
+	width: 92%;
+	/*padding-top: 92%;*/
+	padding: 4%;
+	margin:10% auto;
 	background-color: #bbada0;
 	position: relative;
-	border-radius: 10px;
+	border-radius: 2%;
+}
+#grid-container:before{
+	content: "";
+	display: block;
+	padding-top: 100%;
 }
 .grid-ceil {
 	width: 100px;
@@ -67,9 +104,14 @@ div#grid-container{
 footer {
 	background-color: #ccc;
 	border-top-style: 1px solid #ccb;
+	font-size: 1em;
 	font-weight: bold;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 footer p{
 	text-align: center;
-	padding: 20px;
+	padding: 10px;
 }

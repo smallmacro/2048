@@ -6,8 +6,8 @@ function showAnimation( x, y, number ){
 
 
 	numberCeil.animate({
-		width: "100px",
-		height: "100px",
+		width: "20%",
+		height: "20%",
 		top: getPosTop(x, y),
 		left: getPosLeft(x, y)
 		},50);
