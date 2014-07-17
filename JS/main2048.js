@@ -50,8 +50,8 @@ function updateBoardView(){
 				theNumberCeil.css('top', getPosTop(i,j) + 50);
 				theNumberCeil.css('left', getPosLeft(i,j) + 50);
 			}else {
-				theNumberCeil.css('width', '20%');
-				theNumberCeil.css('height', '20%');
+				theNumberCeil.css('width', '100px');
+				theNumberCeil.css('height', '100px');
 				theNumberCeil.css('top', getPosTop(i,j));
 				theNumberCeil.css('left', getPosLeft(i,j));
 				theNumberCeil.css('background-color', getNumberBackgroundColor( board[i][j] ));
